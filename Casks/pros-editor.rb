@@ -7,7 +7,7 @@ cask 'pros-editor' do
   name 'PROS Editor'
   homepage 'https://pros.cs.purdue.edu/'
 
-  depends_on formula: 'purduesigbots/pros/pros-cli'
+  depends_on formula: 'pros-cli'
   depends_on formula: 'cquery'
 
   app 'PROS Editor.app'
