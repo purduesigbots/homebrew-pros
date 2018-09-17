@@ -3,7 +3,7 @@ class ProsCli < Formula
 
   desc "Command-line interface for interacting with PROS projects"
   homepage "https://pros.cs.purdue.edu/v5/cli"
-  url "https://github.com/purduesigbots/pros-cli3/archive/3.1.1.tar.gz"
+  url "https://github.com/purduesigbots/pros-cli3/archive/3.1.2.tar.gz"
   sha256 "20dc8ef557e787098605bbd612b2dc06d3af98a98414f9b3a7f9ae9ec6bd8e85"
 
   depends_on "python"
