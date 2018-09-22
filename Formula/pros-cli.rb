@@ -5,7 +5,10 @@ class ProsCli < Formula
   homepage "https://pros.cs.purdue.edu/v5/cli"
   url "https://github.com/purduesigbots/pros-cli3/archive/3.1.2.tar.gz"
   sha256 "e2b956fbc5cc2b3935f3a684c5d84184d3787ea7bdb915d118355c208abe79ea"
-
+  
+  # for testing unreviewed changes
+  head "https://github.com/purduesigbots/pros-cli3.git", :branch => "develop"
+  
   depends_on "python"
 
   resource "cachetools" do
