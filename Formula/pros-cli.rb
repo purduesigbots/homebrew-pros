@@ -3,8 +3,8 @@ class ProsCli < Formula
 
   desc "Command-line interface for interacting with PROS projects"
   homepage "https://pros.cs.purdue.edu/v5/cli"
-  url "https://github.com/purduesigbots/pros-cli3/archive/3.1.2.tar.gz"
-  sha256 "e2b956fbc5cc2b3935f3a684c5d84184d3787ea7bdb915d118355c208abe79ea"
+  url "https://github.com/purduesigbots/pros-cli3/archive/3.1.3.tar.gz"
+  sha256 "febee169ee52b04837cfaa602beedc4879dd9b585933f607ba1276fffb4b9f20"
   
   # for testing unreviewed changes
   head "https://github.com/purduesigbots/pros-cli3.git", :branch => "develop"
@@ -76,9 +76,9 @@ class ProsCli < Formula
     sha256 "ec22d826a36ed72a7358ff3fe56cbd4ba69dd7a6718ffd450ff0e9df7a47ce6a"
   end
 
-  resource "rfc6266" do
-    url "https://files.pythonhosted.org/packages/b8/1e/0f014fef1b09eb0b6dc5f10c1fcee9433cf33f53cc17ce66932e6d7babe2/rfc6266-0.0.4.tar.gz"
-    sha256 "923116bd77cf283b161a813139f5022e894e91d040686208aa33eb43db1b7703"
+  resource "rfc6266-parser" do
+    url "https://files.pythonhosted.org/packages/4d/3b/736916c90d3cebff44cde6407b307ad4fec6c8fb2ad2691573d340993a26/rfc6266-parser-0.0.5.post2.tar.gz"
+    sha256 "ff076d4d590e364f862d19e3c9276a580639d293acb88abf903bed9a8c0fb5e0"
   end
 
   resource "scan-build" do
