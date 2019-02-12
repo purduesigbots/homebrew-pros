@@ -1,6 +1,6 @@
 cask 'pros-editor' do
   version '1.32.2'
-  sha256 'f816d8a57e5949893364461c06511e7feb8135f4420811b12d3b83eb7ed44617'
+  sha256 '1581845f4ed5bd5fdb16065635c16e33fbcb4bbf3976d542252fd0386b98c0f3'
 
   url "https://github.com/purduesigbots/atom/releases/download/v#{version}/pros-editor-mac.zip"
   appcast 'https://github.com/purduesigbots/atom/releases.atom'
