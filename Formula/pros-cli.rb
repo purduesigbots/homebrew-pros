@@ -4,8 +4,7 @@ class ProsCli < Formula
   desc "Command-line interface for interacting with PROS projects"
   homepage "https://pros.cs.purdue.edu/v5/cli"
   url "https://github.com/purduesigbots/pros-cli/archive/3.1.4.tar.gz"
-  # TODO: change checksum
-  sha256 "1581845f4ed5bd5fdb16065635c16e33fbcb4bbf3976d542252fd0386b98c0f3"
+  sha256 "0a5eec0efd9962cb36b752d30fccee10a38263ea23260e4c41429887ed23994f"
   
   # for testing unreviewed changes
   head "https://github.com/purduesigbots/pros-cli3.git", :branch => "develop"
