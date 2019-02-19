@@ -82,8 +82,8 @@ class ProsCli < Formula
   end
 
   resource "scan-build" do
-    url "https://files.pythonhosted.org/packages/02/31/37584c92d4c584003978fa46058849f3b71996e2ee20e06e3139565d10af/scan-build-2.0.14.tar.gz"
-    sha256 "ea62fb985415e1f37a801caa375bba266b97d9f12cae2caf73058706604b0755"
+    url "https://files.pythonhosted.org/packages/7e/94/c8235245aee84953a03ed49e2bb6985afa03099a3a0b190a9a0db74701bb/scan-build-2.0.13.tar.gz"
+    sha256 "930cb58ccc0cd4645534ebb41df23bb9766c97c4a66f9f5c6fa9ff7843a391fc"
   end
 
   resource "semantic_version" do
