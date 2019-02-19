@@ -57,6 +57,11 @@ class ProsCli < Formula
     sha256 "a8715c709308350ce4afed5d525682656886d38141387ec87d44421da8d41397"
   end
 
+  resource "pypng" do
+    url "https://files.pythonhosted.org/packages/0e/39/993a5feea8ed9c2eebd70c6e7c20cb4b0823588f5ab0afab4b0be95ebc23/pypng-0.0.19.tar.gz"
+    sha256 "3145d042947fa8121e6bd5a7e59149871bf8c13675c42371e12977499d7f3926"
+  end
+  
   resource "pyserial" do
     url "https://files.pythonhosted.org/packages/cc/74/11b04703ec416717b247d789103277269d567db575d2fd88f25d9767fe3d/pyserial-3.4.tar.gz"
     sha256 "6e2d401fdee0eab996cf734e67773a0143b932772ca8b42451440cfed942c627"
