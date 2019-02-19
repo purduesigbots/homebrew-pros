@@ -3,7 +3,8 @@ class ProsCli < Formula
 
   desc "Command-line interface for interacting with PROS projects"
   homepage "https://pros.cs.purdue.edu/v5/cli"
-  url "https://github.com/purduesigbots/pros-cli3/archive/3.1.3.tar.gz"
+  url "https://github.com/purduesigbots/pros-cli/archive/3.1.4.tar.gz"
+  # TODO: change checksum
   sha256 "1581845f4ed5bd5fdb16065635c16e33fbcb4bbf3976d542252fd0386b98c0f3"
   
   # for testing unreviewed changes
@@ -79,6 +80,11 @@ class ProsCli < Formula
   resource "rfc6266-parser" do
     url "https://files.pythonhosted.org/packages/4d/3b/736916c90d3cebff44cde6407b307ad4fec6c8fb2ad2691573d340993a26/rfc6266-parser-0.0.5.post2.tar.gz"
     sha256 "ff076d4d590e364f862d19e3c9276a580639d293acb88abf903bed9a8c0fb5e0"
+  end
+  
+  resource "observable" do
+    url "https://files.pythonhosted.org/packages/24/57/013c2610cf93f9ae87e522be17d679bcba0e7cee2cd8da4dc8efddef1138/observable-1.0.3.tar.gz"
+    sha256 "97fe8e9d8c2a6185cee3661fa5fba9ce38c7ba388894132940cd6a81633626d9"
   end
 
   resource "scan-build" do
