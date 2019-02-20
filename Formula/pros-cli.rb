@@ -3,8 +3,8 @@ class ProsCli < Formula
 
   desc "Command-line interface for interacting with PROS projects"
   homepage "https://pros.cs.purdue.edu/v5/cli"
-  url "https://github.com/purduesigbots/pros-cli3/archive/3.1.3.tar.gz"
-  sha256 "1581845f4ed5bd5fdb16065635c16e33fbcb4bbf3976d542252fd0386b98c0f3"
+  url "https://github.com/purduesigbots/pros-cli/archive/3.1.4.tar.gz"
+  sha256 "022ba61224a463794ca6559f4bfdba208033697d9d89d8c54553cb8385406295"
   
   # for testing unreviewed changes
   head "https://github.com/purduesigbots/pros-cli3.git", :branch => "develop"
@@ -56,6 +56,11 @@ class ProsCli < Formula
     sha256 "a8715c709308350ce4afed5d525682656886d38141387ec87d44421da8d41397"
   end
 
+  resource "pypng" do
+    url "https://files.pythonhosted.org/packages/0e/39/993a5feea8ed9c2eebd70c6e7c20cb4b0823588f5ab0afab4b0be95ebc23/pypng-0.0.19.tar.gz"
+    sha256 "3145d042947fa8121e6bd5a7e59149871bf8c13675c42371e12977499d7f3926"
+  end
+  
   resource "pyserial" do
     url "https://files.pythonhosted.org/packages/cc/74/11b04703ec416717b247d789103277269d567db575d2fd88f25d9767fe3d/pyserial-3.4.tar.gz"
     sha256 "6e2d401fdee0eab996cf734e67773a0143b932772ca8b42451440cfed942c627"
@@ -65,12 +70,7 @@ class ProsCli < Formula
     url "https://files.pythonhosted.org/packages/b9/6a/bc9277b78f5c3236e36b8c16f4d2701a7fd4fa2eb697159d3e0a3a991573/pyzmq-17.1.2.tar.gz"
     sha256 "a72b82ac1910f2cf61a49139f4974f994984475f771b0faa730839607eeedddf"
   end
-
-  resource "raven" do
-    url "https://files.pythonhosted.org/packages/8f/80/e8d734244fd377fd7d65275b27252642512ccabe7850105922116340a37b/raven-6.9.0.tar.gz"
-    sha256 "3fd787d19ebb49919268f06f19310e8112d619ef364f7989246fc8753d469888"
-  end
-
+  
   resource "requests" do
     url "https://files.pythonhosted.org/packages/54/1f/782a5734931ddf2e1494e4cd615a51ff98e1879cbe9eecbdfeaf09aa75e9/requests-2.19.1.tar.gz"
     sha256 "ec22d826a36ed72a7358ff3fe56cbd4ba69dd7a6718ffd450ff0e9df7a47ce6a"
@@ -80,10 +80,20 @@ class ProsCli < Formula
     url "https://files.pythonhosted.org/packages/4d/3b/736916c90d3cebff44cde6407b307ad4fec6c8fb2ad2691573d340993a26/rfc6266-parser-0.0.5.post2.tar.gz"
     sha256 "ff076d4d590e364f862d19e3c9276a580639d293acb88abf903bed9a8c0fb5e0"
   end
+  
+  resource "sentry-sdk" do
+    url "https://files.pythonhosted.org/packages/9a/8d/e2af648ebb60cff433cdc80760bb45fe9cb7f32ccdff19c43c0d2e743968/sentry-sdk-0.7.3.tar.gz"
+    sha256 "6f4e264d0ad6267c40e20431a6a50f815515805ffe8eb9815340adf931279523"
+  end
+  
+  resource "observable" do
+    url "https://files.pythonhosted.org/packages/24/57/013c2610cf93f9ae87e522be17d679bcba0e7cee2cd8da4dc8efddef1138/observable-1.0.3.tar.gz"
+    sha256 "97fe8e9d8c2a6185cee3661fa5fba9ce38c7ba388894132940cd6a81633626d9"
+  end
 
   resource "scan-build" do
-    url "https://files.pythonhosted.org/packages/02/31/37584c92d4c584003978fa46058849f3b71996e2ee20e06e3139565d10af/scan-build-2.0.14.tar.gz"
-    sha256 "ea62fb985415e1f37a801caa375bba266b97d9f12cae2caf73058706604b0755"
+    url "https://files.pythonhosted.org/packages/7e/94/c8235245aee84953a03ed49e2bb6985afa03099a3a0b190a9a0db74701bb/scan-build-2.0.13.tar.gz"
+    sha256 "930cb58ccc0cd4645534ebb41df23bb9766c97c4a66f9f5c6fa9ff7843a391fc"
   end
 
   resource "semantic_version" do
@@ -108,19 +118,5 @@ class ProsCli < Formula
 
   def install
     virtualenv_install_with_resources
-  end
-
-  test do
-    # `test do` will create, run in and delete a temporary directory.
-    #
-    # This test will fail and we won't accept that! For Homebrew/homebrew-core
-    # this will need to be a test that verifies the functionality of the
-    # software. Run the test with `brew test pros-cli3`. Options passed
-    # to `brew install` such as `--HEAD` also need to be provided to `brew test`.
-    #
-    # The installed folder is not in the path, so use the entire path to any
-    # executables being tested: `system "#{bin}/program", "do", "something"`.
-    system "#{bin}/prosv5", "c", "n", "."
-    system "#{bin}/prosv5", "c", "info-project"
   end
 end
