@@ -67,8 +67,8 @@ class ProsCli < Formula
   end
 
   resource "pyzmq" do
-    url "https://files.pythonhosted.org/packages/b9/6a/bc9277b78f5c3236e36b8c16f4d2701a7fd4fa2eb697159d3e0a3a991573/pyzmq-17.1.2.tar.gz"
-    sha256 "a72b82ac1910f2cf61a49139f4974f994984475f771b0faa730839607eeedddf"
+    url "https://files.pythonhosted.org/packages/05/77/7483975d84fe1fd24cc67881ba7810e0e7b3ee6c2a0e002a5d6703cca49b/pyzmq-19.0.2.tar.gz"
+    sha256 "296540a065c8c21b26d63e3cea2d1d57902373b16e4256afe46422691903a438"
   end
   
   resource "requests" do
