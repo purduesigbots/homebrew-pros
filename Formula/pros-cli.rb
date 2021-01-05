@@ -57,8 +57,8 @@ class ProsCli < Formula
   end
 
   resource "pypng" do
-    url "https://files.pythonhosted.org/packages/0e/39/993a5feea8ed9c2eebd70c6e7c20cb4b0823588f5ab0afab4b0be95ebc23/pypng-0.0.19.tar.gz"
-    sha256 "3145d042947fa8121e6bd5a7e59149871bf8c13675c42371e12977499d7f3926"
+    url "https://files.pythonhosted.org/packages/bc/fb/f719f1ac965e2101aa6ea6f54ef8b40f8fbb033f6ad07c017663467f5147/pypng-0.0.20.tar.gz"
+    sha256 "1032833440c91bafee38a42c38c02d00431b24c42927feb3e63b104d8550170b"
   end
   
   resource "pyserial" do
