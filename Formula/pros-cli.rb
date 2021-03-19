@@ -3,11 +3,11 @@ class ProsCli < Formula
 
   desc "Command-line interface for interacting with PROS projects"
   homepage "https://pros.cs.purdue.edu/v5/cli"
-  url "https://github.com/purduesigbots/pros-cli/archive/3.1.4.tar.gz"
-  sha256 "022ba61224a463794ca6559f4bfdba208033697d9d89d8c54553cb8385406295"
+  url "https://github.com/purduesigbots/pros-cli/archive/3.2.0.tar.gz"
+  sha256 "3e5cd963a5e9f3b125fdbdaa3f42b9dcffeb7d309920a8bb0cc1bb530d605dc7"
   
   # for testing unreviewed changes
-  head "https://github.com/purduesigbots/pros-cli3.git", :branch => "develop"
+  head "https://github.com/purduesigbots/pros-cli.git", :branch => "develop"
   
   depends_on "python"
 
