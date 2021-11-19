@@ -3,8 +3,8 @@ class ProsCli < Formula
 
   desc "Command-line interface for interacting with PROS projects"
   homepage "https://pros.cs.purdue.edu/v5/cli"
-  url "https://github.com/purduesigbots/pros-cli/archive/3.2.2.tar.gz"
-  sha256 "12feebd01a895fb7f9be8a33f3d8618abf7bc1e055334b1eb6b87d73e7581408"
+  url "https://github.com/purduesigbots/pros-cli/archive/3.2.3.tar.gz"
+  sha256 "c04ec5773b218f4625b4932ffece62faa57aad2b3ab41bd18d5038f34050b8a3"
   
   # for testing unreviewed changes
   head "https://github.com/purduesigbots/pros-cli.git", :branch => "develop"
@@ -74,11 +74,6 @@ class ProsCli < Formula
   resource "requests" do
     url "https://files.pythonhosted.org/packages/6b/47/c14abc08432ab22dc18b9892252efaf005ab44066de871e72a38d6af464b/requests-2.25.1.tar.gz"
     sha256 "27973dd4a904a4f13b263a19c866c13b92a39ed1c964655f025f3f8d3d75b804"
-  end
-
-  resource "rfc6266-parser" do
-    url "https://files.pythonhosted.org/packages/81/cf/1f4977bd110bb78c7ff1b8a6344bb0630e25ad42870099e56f9896a302cb/rfc6266-parser-0.0.6.tar.gz"
-    sha256 "6eb7d7223c75727ac697d3150c3eea461e1660a9ca116bb29b57d751abeeec65"
   end
   
   resource "sentry-sdk" do
