@@ -8,7 +8,6 @@ cask 'pros-editor' do
   homepage 'https://pros.cs.purdue.edu/'
 
   depends_on formula: 'pros-cli'
-  depends_on formula: 'cquery'
 
   app 'PROS Editor.app'
   binary "#{appdir}/PROS Editor.app/Contents/Resources/app/apm/bin/apm", target: 'pros-apm'
