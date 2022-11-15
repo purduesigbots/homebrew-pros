@@ -10,7 +10,7 @@ class ProsCli < Formula
   head "https://github.com/purduesigbots/pros-cli.git", :branch => "develop"
   
   depends_on "python"
-  depends_on formula: 'pyinstaller'
+  depends_on "pyinstaller"
 
   resource "cachetools" do
     url "https://files.pythonhosted.org/packages/49/c9/5791269161be47eacca42ffa0a87e0a4a1007b6dfbec0400ae36d43c08f7/cachetools-4.2.0.tar.gz"
