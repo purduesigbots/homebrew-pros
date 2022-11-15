@@ -120,6 +120,11 @@ class ProsCli < Formula
     url "https://files.pythonhosted.org/packages/46/92/bffe4576b383f20995ffb15edccf1c97d2e39f9a8c72136836407f099277/macholib-1.16.2.tar.gz"
     sha256 "557bbfa1bb255c20e9abafe7ed6cd8046b48d9525db2f9b77d3122a63a2a8bf8"
   end
+  
+  resource "pyinstaller-hooks-contrib" do
+    url "https://files.pythonhosted.org/packages/ff/c0/2555fdf01cb9fb1757e9cf50ed62be721d88e50e05049e205e76e6dc594a/pyinstaller-hooks-contrib-2022.13.tar.gz"
+    sha256 "e06d0881e599d94dc39c6ed1917f0ad9b1858a2478b9892faac18bd48bcdc2de"
+  end
 
   def install
     virtualenv_install_with_resources
