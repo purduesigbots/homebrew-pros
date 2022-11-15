@@ -125,6 +125,11 @@ class ProsCli < Formula
     url "https://files.pythonhosted.org/packages/ff/c0/2555fdf01cb9fb1757e9cf50ed62be721d88e50e05049e205e76e6dc594a/pyinstaller-hooks-contrib-2022.13.tar.gz"
     sha256 "e06d0881e599d94dc39c6ed1917f0ad9b1858a2478b9892faac18bd48bcdc2de"
   end
+  
+  resource "altgraph" do
+    url "https://files.pythonhosted.org/packages/a9/f1/62830c4915178dbc6948687916603f1cd37c2c299634e4a8ee0efc9977e7/altgraph-0.17.2.tar.gz"
+    sha256 "ebf2269361b47d97b3b88e696439f6e4cbc607c17c51feb1754f90fb79839158"
+  end
 
   def install
     virtualenv_install_with_resources
