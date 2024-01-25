@@ -9,7 +9,7 @@ class ProsCli < Formula
   # for testing unreviewed changes
   head "https://github.com/purduesigbots/pros-cli.git", :branch => "develop"
 
-  depends_on "python@3.10.11"
+  depends_on "python@3.10"
 
   resource "cachetools" do
     url "https://files.pythonhosted.org/packages/49/c9/5791269161be47eacca42ffa0a87e0a4a1007b6dfbec0400ae36d43c08f7/cachetools-4.2.0.tar.gz"
