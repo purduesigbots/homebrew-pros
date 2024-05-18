@@ -136,6 +136,11 @@ class ProsCli < Formula
     sha256 "35547502bf1958044716a03a2f47092a89efe8f9789ab0c4c528d9c9c30bc148"
   end
 
+  resource "rich-click" do
+    url "https://files.pythonhosted.org/packages/3d/17/96fa7ffbfcf14e12f277a7c1d2a292fba88684004dabef4297a33d201f59/rich-click-1.7.4.tar.gz"
+    sha256 "7ce5de8e4dc0333aec946113529b3eeb349f2e5d2fafee96b9edf8ee36a01395"
+  end
+
   def install
     virtualenv_install_with_resources
   end
