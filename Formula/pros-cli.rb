@@ -136,6 +136,11 @@ class ProsCli < Formula
     sha256 "35547502bf1958044716a03a2f47092a89efe8f9789ab0c4c528d9c9c30bc148"
   end
 
+  resource "rich" do
+    url "https://files.pythonhosted.org/packages/b3/01/c954e134dc440ab5f96952fe52b4fdc64225530320a910473c1fe270d9aa/rich-13.7.1.tar.gz"
+    sha256 "9be308cb1fe2f1f57d67ce99e95af38a1e2bc71ad9813b0e247cf7ffbcc3a432"
+  end
+
   resource "rich-click" do
     url "https://files.pythonhosted.org/packages/3d/17/96fa7ffbfcf14e12f277a7c1d2a292fba88684004dabef4297a33d201f59/rich-click-1.7.4.tar.gz"
     sha256 "7ce5de8e4dc0333aec946113529b3eeb349f2e5d2fafee96b9edf8ee36a01395"
