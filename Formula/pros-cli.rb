@@ -168,5 +168,8 @@ class ProsCli < Formula
 
   def install
     virtualenv_install_with_resources
+    (buildpath/"pros"/"autocomplete").children.each do |f|
+      pkgshare.install f
+    end
   end
 end
