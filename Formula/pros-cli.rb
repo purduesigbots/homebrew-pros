@@ -3,8 +3,8 @@ class ProsCli < Formula
 
   desc "Command-line interface for interacting with PROS projects"
   homepage "https://pros.cs.purdue.edu/v5/cli"
-  url "https://github.com/purduesigbots/pros-cli/archive/refs/heads/wheel-bundle-autocomplete.zip"
-  sha256 "662C5A285589BD04CF7298E8355663A27740AFFD96D77E286525BD05E411918D"
+  url "https://github.com/purduesigbots/pros-cli/archive/refs/heads/wheel-bundle-autocomplete-3.5.4.zip"
+  sha256 "40C6815B64435D58F60439A31CB8AE1513093C55D2C00D2A74C3E9AAC7200E15"
 
   # for testing unreviewed changes
   head "https://github.com/purduesigbots/pros-cli.git", :branch => "develop"
